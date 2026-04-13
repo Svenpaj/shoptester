@@ -24,6 +24,7 @@ builder.Services.AddSingleton(ServiceProvider =>
 });
 
 var app = builder.Build();
+// app.UseHttpsRedirection();
 app.UseSession();
 
 // Use static files for the wwwroot folder
